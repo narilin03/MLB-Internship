@@ -16,9 +16,9 @@ def input_data():
 def grade(average):
     if average>=80:
         return "A"
-    elif average>=70 and average<=79:
+    elif average>=70:
         return "B"
-    elif average>=60 and average<=69:    
+    elif average>=60:    
         return "C"
     else:
         return "D" 
