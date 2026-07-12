@@ -1,21 +1,45 @@
-# Day 1: Git, GitHub Setup, and Environment Configuration
+# Day 1: Student Grading System
 
-A command-line milestone establishing the local development environment and core version control workflow for the MLB-Internship.
+A command-line Python program that collects student academic profiles, processes numeric scores, and automatically evaluates letter grades.
 
 ## What It Does
-- Configures the local Python runtime environment.
-- Initializes local repository tracking for project modules.
-- Synchronizes project files directly with the remote repository branch.
+- Takes dynamic console input for one or more students: Name, Class, and multiple matching Marks.
+- Manually calculates each student's average score across their entered subject inputs.
+- Assigns an absolute academic letter grade based on the final calculated average.
+- Prints a clean, formatted transcript directly to the terminal screen.
+
+## Grade Criteria
+
+| Average Marks | Grade |
+| --- | --- |
+| 80 and above | A |
+| 70 to 79.99 | B |
+| 60 to 69.99 | C |
+| Below 60 | D |
+
+## Functions Used
+- `input_data()`: Prompts for student profiles and collects scores interactively.
+- `grade(average)`: Evaluates and matches numeric ranges to their structural letter grades.
+- `calculate(...)`: Orchestrates the computational total, calculates the percentage, and builds the visual terminal report.
+
+## Core Logic & Data Validation
+- **Continuous Inputs**: Uses a controlled `while True` loop to allow flexible data entry until the user submits a blank line.
+- **Defensive Type-Casting**: Manually converts string inputs into floating-point numbers (`float()`) to allow precise decimal evaluation.
+- **Empty State Guarding**: Checks length parameters up front to prevent division-by-zero crashes if a profile contains no matching subjects.
 
 ## Concepts Practiced
-- **Git Initialization**: `git init` and configuring user credentials.
-- **Staging & Commits**: `git add .` and creating descriptive snapshot points with `git commit`.
-- **Remote Linking**: Associating local repos with GitHub using `git remote add`.
-- **Branch Management**: Deploying code directly to the host server using `git push`.
+- Custom Functions
+- List Packing (`.append()`)
+- Tuple Unpacking across function returns
+- Conditional Branches (`if/elif/else`)
+- Loop Controls (`while`, `break`)
+- Console Layout Construction
 
-## Challenges Faced & Solutions
-- **Nested Git Repositories**: Encountered a synchronization block due to accidental nested `.git` configuration folders inside project subdirectories. Fixed by completely purging the hidden tracking folders and re-initializing a clean, unified workspace structure.
-- **Terminal Shell Confusion**: Attempted to run system commands inside the active Python interpreter. Resolved by executing `exit()` to leave the interactive shell (`>>>`) and running the script paths directly from the clean PowerShell prompt.
+## How to Run
+Navigate to your Day-1 project directory and execute the script:
+```bash
+python grading_system.py
+```
 
 ## Files
-- `.gitignore`: Prevents system cache and tracking files from entering version control.
+- `grading_system.py`: Main implementation source code file.
