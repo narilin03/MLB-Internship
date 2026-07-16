@@ -1,6 +1,6 @@
 import json
 
-JsonFile="Students.json"
+JsonFile="Day3\practice tasks\Students.json"
 
 Students_data={
     "1001":{"Name":"Subhan","Class":"11","Degree":"Medical","Grade":"A"},

@@ -1,5 +1,5 @@
 #Initial File Data
-with open("day3_practice.txt","w")as f1:
+with open("Day3\practice tasks\day3_practice.txt","w")as f1:
     f1.write("This is my task for Day3.\n")
     f1.write("Which is about File Handling.\n")
     
