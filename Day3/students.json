@@ -1,0 +1,22 @@
+{
+    "101": {
+        "Name": "Kainat",
+        "Age": 18,
+        "Course": "History"
+    },
+    "100": {
+        "Name": "Haris",
+        "Age": 17,
+        "Course": "Maths"
+    },
+    "102": {
+        "Name": "Danial",
+        "Age": 18,
+        "Course": "Science"
+    },
+    "104": {
+        "Name": "Bisma",
+        "Age": 17,
+        "Course": "Computer"
+    }
+}
